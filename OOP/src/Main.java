@@ -1,4 +1,6 @@
 import com.tipizo.introclasses.Ball;
+import com.tipizo.introclasses.BaseBall;
+import com.tipizo.introclasses.BasketBall;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,21 +12,15 @@ public class Main {
                             12,
                          45);
 
-        System.out.println(ball.getName());
-        System.out.println(ball.getColor());
-        System.out.println(ball.getCapacity());
-        System.out.println(ball.getBounceRate());
+        // Creating a basketball object
+        BasketBall basketBall = new BasketBall();
+        System.out.println(basketBall.isNBA());
+        basketBall.bounces();
 
-        ball.setName("Basketball");
-        System.out.println(ball.getName());
+        // creating a baseball object
+        BaseBall baseBall = new BaseBall();
+        baseBall.bounces();
 
-        ball.setBounceRate(34);
-        System.out.println(ball.getBounceRate());
 
-        ball.setColor("white and black");
-        System.out.println(ball.getColor());
-
-        ball.setCapacity(23);
-        System.out.println(ball.getCapacity());
     }
 }
