@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/Methods/Methods.iml" filepath="$PROJECT_DIR$/Methods/Methods.iml" />
       <module fileurl="file://$PROJECT_DIR$/OOP/OOP.iml" filepath="$PROJECT_DIR$/OOP/OOP.iml" />
       <module fileurl="file://$PROJECT_DIR$/ProcessHandle/ProcessHandle.iml" filepath="$PROJECT_DIR$/ProcessHandle/ProcessHandle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StringBiuilderExamples/StringBiuilderExamples.iml" filepath="$PROJECT_DIR$/StringBiuilderExamples/StringBiuilderExamples.iml" />
     </modules>
   </component>
 </project>
