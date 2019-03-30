@@ -4,16 +4,14 @@ public class Main {
     public static void main(String[] args) {
 
         // Creating a ball (an object)
-        Ball myBall = new Ball();
-        Ball secondBall = new Ball();
+        Ball ball = new Ball("Blue",
+                             "justBall",
+                            12,
+                         45);
 
-        myBall.color = "Blue";
-        myBall.name = "Basketball";
-        System.out.println(myBall.color);
-
-        secondBall.color = "white and black";
-        secondBall.name = "Soccer Ball";
-        System.out.println(secondBall.name);
-
+        ball.showColor();
+        ball.showName();
+        ball.showCapacity();
+        ball.showBounceRate();
     }
 }
