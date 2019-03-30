@@ -19,6 +19,7 @@ public class Main {
 
         // creating a baseball object
         BaseBall baseBall = new BaseBall();
+        System.out.println(baseBall.isAL());
         baseBall.bounces();
 
 
