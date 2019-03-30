@@ -12,7 +12,7 @@ public class Ball {
     // Constructor
 
     public Ball() {
-        //
+        // default constructor
     }
 
     public Ball(String color, String name, int capacity, int bounceRate) {
@@ -20,6 +20,17 @@ public class Ball {
         this.name = name;
         this.capacity = capacity;
         this.bounceRate = bounceRate;
+    }
+
+    public Ball(String color, String name) {
+        this.color = color;
+        this.name = name;
+    }
+
+    public Ball(String color, String name, int capacity) {
+        this.color = color;
+        this.name = name;
+        this.capacity = capacity;
     }
 
     // Behaviors
