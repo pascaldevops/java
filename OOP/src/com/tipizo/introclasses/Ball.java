@@ -23,20 +23,44 @@ public class Ball {
     }
 
     // Behaviors
-    public void showColor() {
-        System.out.println("Ball color is: " + color);
+    public String getColor() {
+        return color;
     }
 
-    public void showName() {
-        System.out.println("Ball name is: " + name);
+    public String getName() {
+        return name;
     }
 
-    public void showCapacity() {
-        System.out.println("Ball capacity: " + capacity);
+    public int getCapacity() {
+        return capacity;
     }
 
-    public void showBounceRate() {
-        System.out.println("Ball bounce rate: " + bounceRate);
+    public int getBounceRate() {
+        return bounceRate;
+    }
+
+    public String getBallType() {
+        return ballType;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+
+    public void setBounceRate(int bounceRate) {
+        this.bounceRate = bounceRate;
+    }
+
+    public void setBallType(String ballType) {
+        this.ballType = ballType;
     }
 
     public void bounces() {
