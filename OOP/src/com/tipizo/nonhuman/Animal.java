@@ -1,47 +1,39 @@
 package com.tipizo.nonhuman;
 
-public class Animal {
+public abstract class Animal {
 
-    private String name;
+    private String gender;
     private int age;
-    private String color;
+    private int weightInLbs;
 
-    public Animal() {
-        // Default constructor
-    }
-
-    public Animal(String name, int age, String color) {
-        this.name = name;
+    public Animal(int age, String gender, int weightInLbs) {
+        this.gender = gender;
         this.age = age;
-        this.color = color;
+        this.weightInLbs = weightInLbs;
     }
 
-    public String getName() {
-        return name;
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
     public int getAge() {
         return age;
     }
 
-    public String getColor() {
-        return color;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public void setAge(int age) {
         this.age = age;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public int getWeightInLbs() {
+        return weightInLbs;
     }
 
-    public void walk() {
-        System.out.println("walk....");
+    public void setWeightInLbs(int weightInLbs) {
+        this.weightInLbs = weightInLbs;
     }
 
     public void eat() {
@@ -51,4 +43,6 @@ public class Animal {
     public void sleep() {
         System.out.println("sleep....");
     }
+
+    public abstract void move();
 }
